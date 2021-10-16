@@ -1,88 +1,63 @@
 <!DOCTYPE html>
-<html>
-<style>
-  input[type=text],
-  select {
-    width: 100%;
-    padding: 12px 20px;
-    margin: 8px 0;
-    display: inline-block;
-    border: 1px solid #ccc;
-    border-radius: 4px;
-    box-sizing: border-box;
-  }
-
-  input[type=submit] {
-    width: 100%;
-    background-color: #4CAF50;
-    color: white;
-    padding: 14px 20px;
-    margin: 8px 0;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-
-  div {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-
-  span {
-    background-color: rgb(16, 9, 20)
-  }
-</style>
-
+<html lang="en">
 
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="style.css" rel="stylesheet">
+    <title>Donate</title>
 </head>
 
-<body background="city.jpg">
+<body>
+    <div class="heading">
+        <h1>Fill Details and Get Code</h1>
+    </div>
 
-  <h1 style="color:azure;"> <span>Fill Details and Get Code</span></h1>
+    <div class="mainctc">
+        <p>Enter Your Minecraft UserName:-</p>
+        <input class="username" id="username" placeholder="Enter your Name">
+    </div>
 
-  <div>
-    <form>
-      <label for="name"> UserName</label>
-      <input type="text" id="name" name="firstname" placeholder="Your name..">
+    <div class="mainctc2">
+        <p>Enter the message you want to say:-</p>
+        <input class="username" id="username2" placeholder="Enter your Message">
+    </div>
 
-      <label for="message">Message</label>
-      <input type="text" id="message" name="message" placeholder="message" />
-
-      <label for="amount">Amount & Perk & Rank</label>
-      <select id="amount" name="amount">
-        <option value="a">40 - (Donator kit (helmet, chestplate, leggins, boots, sword, picaxe) [Supporter]</option>
-        <option value="b">40 - (pvp protection -> 2 days ) [Supporter+] </option>
-        <option value="c">40 - (entity target protection -> 2 days) [Supporter++]</option>
-        <option value="d">40 - (Access to /anvil + /craft -> 2 Days) [Supporter+++]</option>
-        <option value="e">40 - (Nothing Only Rank Name LOL) [Supporter++++]</option>
-        <option value="f">50- (set extra home 4) [Helper]</option>
-        <option value="g">60 - (Access to /anvil + /craft + home set 4) [Novice]</option>
-        <option value="h">70 - (pvp Protection + entity target protection -> 7 Days) [Apprentice]</option>
-        <option value="i">80 - (set extra home 8) [Amateur]</option>
-        <option value="j">90 - (Access to /echest + sethome 6) [Senior]</option>
-        <option value="k">100 - (Access to /echest + /anvil + home Set 5) [Sergeant]</option>
-        <option value="l">110 - (Access to /echest + /anvil + extra home 6) [Commander]</option>
-        <option value="m">120 - (Access to /echest + /anvil + /craft + extra home 8) [Gen Commander]</option>
-        <option value="n">130 - (Access to /echest + /craft + /anvil + /grindstone + extra home 10) [Army ChiefArmy
-          Chief]</option>
-        <option value="o">140 - (Access to /echest + /craft + /anvil + /grindstone + /smith + extra home 12) [Mafia
-          Boss]</option>
-        <option value="p">150 - (Access to /echest + /craft + /anvil + /grindstone + /smith + /stone cutter + /loom +
-          extra home 15) [
-          President]</option>
-      </select>
-
-    </form>
-
-    <input type="submit" value="Submit" onclick="submit()">
-  </div>
+    <div class="mainctc">
+        <p>Select Rank:-</p>
+        <select id="amount" name="amount">
+            <option value="a">40 - (Donator kit (helmet, chestplate, leggins, boots, sword, picaxe) [Supporter]</option>
+            <option value="b">40 - (pvp protection -> 2 days ) [Supporter+] </option>
+            <option value="c">40 - (entity target protection -> 2 days) [Supporter++]</option>
+            <option value="d">40 - (Access to /anvil + /craft -> 2 Days) [Supporter+++]</option>
+            <option value="e">40 - (Nothing Only Rank Name LOL) [Supporter++++]</option>
+            <option value="f">50- (set extra home 4) [Helper]</option>
+            <option value="g">60 - (Access to /anvil + /craft + home set 4) [Novice]</option>
+            <option value="h">70 - (pvp Protection + entity target protection -> 7 Days) [Apprentice]</option>
+            <option value="i">80 - (set extra home 8) [Amateur]</option>
+            <option value="j">90 - (Access to /echest + sethome 6) [Senior]</option>
+            <option value="k">100 - (Access to /echest + /anvil + home Set 5) [Sergeant]</option>
+            <option value="l">110 - (Access to /echest + /anvil + extra home 6) [Commander]</option>
+            <option value="m">120 - (Access to /echest + /anvil + /craft + extra home 8) [Gen Commander]</option>
+            <option value="n">130 - (Access to /echest + /craft + /anvil + /grindstone + extra home 10) [Army ChiefArmy
+                Chief]</option>
+            <option value="o">140 - (Access to /echest + /craft + /anvil + /grindstone + /smith + extra home 12) [Mafia
+                Boss]</option>
+            <option value="p">150 - (Access to /echest + /craft + /anvil + /grindstone + /smith + /stone cutter + /loom
+                +
+                extra home 15) [
+                President]</option>
+        </select>
+        <br>
+        <br>
+        <br>
+        <div class="btnsubmit">
+            <button class="mybtn" onclick="submit()">
+                <h1>Get Code</h1>
+            </button>
+        </div>
+    </div>
 </body>
 <script src="./compiled.js"></script>
 
